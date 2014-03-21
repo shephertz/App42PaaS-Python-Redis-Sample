@@ -40,6 +40,8 @@ INSTALLED_APPS = (
 )
 
 MIDDLEWARE_CLASSES = (
+    'django.middleware.cache.UpdateCacheMiddleware',  
+    'django.middleware.cache.FetchFromCacheMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -61,10 +63,9 @@ WSGI_APPLICATION = 'App42PaaS_Python_Redis_Sample.wsgi.application'
 CACHES = {
     "default": {
         "BACKEND": "redis_cache.cache.RedisCache",
-        "LOCATION": "54.208.130.57:52975",
+        "LOCATION": "54.208.130.57:16894:0",
         "OPTIONS": {
-            "PASSWORD": "a2in3kztskmoltjzgu0rpmbfick6rqs5",
-            "DB": 0,
+            "PASSWORD": "ai6zt1j57hypy12h70s2p82x7joykc8e",
             "CLIENT_CLASS": "redis_cache.client.DefaultClient",
         },
     },

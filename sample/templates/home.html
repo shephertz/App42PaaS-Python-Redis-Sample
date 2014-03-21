@@ -29,9 +29,9 @@
                         <td>Description</td>
                         </tr>
                 	</thead><tbody>
-{% for e in results %}
+					
+{% for e in lists %}
 <tr><td>{{e.name}}</td><td>{{e.email}}</td><td>{{e.description}}</td></tr>
-{{e}}
 {% endfor %}
 </tbody>
          </table>
