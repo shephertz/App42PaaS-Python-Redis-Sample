@@ -63,9 +63,9 @@ WSGI_APPLICATION = 'App42PaaS_Python_Redis_Sample.wsgi.application'
 CACHES = {
     "default": {
         "BACKEND": "redis_cache.cache.RedisCache",
-        "LOCATION": "54.208.130.57:16894:0",
+        "LOCATION": "192.168.2.88:28406:0",
         "OPTIONS": {
-            "PASSWORD": "ai6zt1j57hypy12h70s2p82x7joykc8e",
+            "PASSWORD": "aqpv73ecyblqg8a7gko4snyk4ak6e1sh",
             "CLIENT_CLASS": "redis_cache.client.DefaultClient",
         },
     },
